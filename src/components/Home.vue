@@ -4,7 +4,7 @@
       <Header />
     </template>
     <template #resume>
-      <Resume />
+      <Resume :label="label" :amount="amount" :total-amount="15000" />
     </template>
     <template #movements>
       <Movements />
@@ -24,6 +24,12 @@ export default {
     Layout,
     Resume,
     Movements,
+  },
+  data() {
+    return {
+      label: null,
+      amount: null,
+    };
   },
 };
 </script>
