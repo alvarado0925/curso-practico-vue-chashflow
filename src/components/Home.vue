@@ -4,7 +4,10 @@
       <Header />
     </template>
     <template #resume>
-      <Resume :label="label" :amount="amount" :total-amount="15000" />
+      <Resume :label="label" :amount="amount" :total-amount="15000">
+        <template #graphic>Graficos</template>
+        <template #action>Acciones</template>
+      </Resume>
     </template>
     <template #movements>
       <Movements />
