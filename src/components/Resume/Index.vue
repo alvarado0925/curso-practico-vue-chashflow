@@ -12,10 +12,7 @@
 </template>
 
 <script>
-const currencyFormater = new Intl.NumberFormat("es-CO", {
-  style: "currency",
-  currency: "COP",
-});
+import currencyFormater from "@/js/currencyFormater";
 
 export default {
   props: {
