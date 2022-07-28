@@ -5,7 +5,9 @@
     </template>
     <template #resume>
       <Resume :label="label" :amount="amount" :total-amount="15000">
-        <template #graphic>Graficos</template>
+        <template #graphic>
+          <Graphic />
+        </template>
         <template #action>
           <Action />
         </template>
@@ -22,6 +24,7 @@ import Layout from "./Layout.vue";
 import Header from "./Header.vue";
 import Action from "./Action.vue";
 import Resume from "./Resume/Index.vue";
+import Graphic from "./Resume/Graphic.vue";
 import Movements from "./Movements/Index.vue";
 
 export default {
@@ -29,6 +32,7 @@ export default {
     Header,
     Layout,
     Resume,
+    Graphic,
     Action,
     Movements,
   },
