@@ -6,7 +6,7 @@
     <template #resume>
       <Resume :label="label" :amount="amount" :total-amount="15000">
         <template #graphic>
-          <Graphic />
+          <Graphic :amounts="amounts" />
         </template>
         <template #action>
           <Action />
@@ -40,6 +40,7 @@ export default {
     return {
       label: null,
       amount: null,
+      amounts: [50, 100, -10],
       movements: [
         {
           id: 1,
